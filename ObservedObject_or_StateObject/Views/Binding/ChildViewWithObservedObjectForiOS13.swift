@@ -1,39 +1,40 @@
 //
-//  ChildViewWithObservedObject.swift
+//  ChildViewWithObservedObjectForiOS13.swift
 //  ObservedObject_or_StateObject
 //
-//  Created by hiraoka on 2021/04/03.
+//  Created by hiraoka on 2021/04/04.
 //
 
 import SwiftUI
 
-struct ChildViewWithObservedObject: View {
-    @ObservedObject var data: ProjectData = .init()
-    
+struct ChildViewWithObservedObjectForiOS13: View {
+    @ObservedObject var projectData: ProjectData
+
     private let filename = (#file as NSString).lastPathComponent
-    
-    init() {
+
+    init(projectData: ProjectData) {
+        self.projectData = projectData
         print("init: \(filename)")
     }
-    
+
     var body: some View {
         VStack(spacing: 8.0) {
-            
+
             Text(filename).font(.headline)
 
-            Text("stringValue: \(data.stringValue)")
-            
-            TextField("stringValue", text: $data.stringValue)
+            Text("stringValue: \(projectData.stringValue)")
+
+            TextField("stringValue", text: $projectData.stringValue)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .foregroundColor(.black)
-            
-            Text("intValue: \(data.intValue)")
-            
-            Button(action: data.countUp) {
+
+            Text("intValue: \(projectData.intValue)")
+
+            Button(action: projectData.countUp) {
                 Text("Count up").padding()
             }
             .background(Capsule().foregroundColor(.accentColor))
-            
+
         }
         .padding()
         .onAppear {
@@ -45,8 +46,8 @@ struct ChildViewWithObservedObject: View {
     }
 }
 
-struct ChildViewWithObservedObject_Previews: PreviewProvider {
+struct ChildViewWithObservedObjectForiOS13_Previews: PreviewProvider {
     static var previews: some View {
-        ChildViewWithObservedObject()
+        ChildViewWithObservedObjectForiOS13(projectData: ProjectData())
     }
 }

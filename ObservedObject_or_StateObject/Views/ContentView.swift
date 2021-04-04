@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var environmentProjectData: ProjectData = .init()
+
     var body: some View {
         NavigationView {
             List {
                 NavigationLink("ObservedObject", destination: ParentViewWithObservedObject())
                 NavigationLink("StateObject", destination: ParentViewWithStateObject())
+                NavigationLink("EnvironmentObject",
+                               destination: ParentViewWithEnvironmentObject()
+                                .environmentObject(environmentProjectData))
+                NavigationLink("ObservedObject for iOS13", destination: ParentViewWithObservedObjectForiOS13())
 
             }
         }

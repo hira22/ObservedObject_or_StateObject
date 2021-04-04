@@ -19,6 +19,10 @@
 		B659B3982618B5C200C90C64 /* ParentViewWithStateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659B3972618B5C200C90C64 /* ParentViewWithStateObject.swift */; };
 		B659B39D2618B5DB00C90C64 /* ChildViewWithStateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659B39C2618B5DB00C90C64 /* ChildViewWithStateObject.swift */; };
 		B659B3A22618C2E900C90C64 /* Color+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659B3A12618C2E900C90C64 /* Color+random.swift */; };
+		B659B3BC2619CB2200C90C64 /* ParentViewWithEnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659B3BB2619CB2200C90C64 /* ParentViewWithEnvironmentObject.swift */; };
+		B659B3C42619CB5E00C90C64 /* ChildViewWithEnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659B3C32619CB5E00C90C64 /* ChildViewWithEnvironmentObject.swift */; };
+		B659B3CD2619FAD000C90C64 /* ParentViewWithObservedObjectForiOS13.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659B3CC2619FAD000C90C64 /* ParentViewWithObservedObjectForiOS13.swift */; };
+		B659B3D52619FAE100C90C64 /* ChildViewWithObservedObjectForiOS13.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659B3D42619FAE100C90C64 /* ChildViewWithObservedObjectForiOS13.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		B659B3972618B5C200C90C64 /* ParentViewWithStateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewWithStateObject.swift; sourceTree = "<group>"; };
 		B659B39C2618B5DB00C90C64 /* ChildViewWithStateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewWithStateObject.swift; sourceTree = "<group>"; };
 		B659B3A12618C2E900C90C64 /* Color+random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+random.swift"; sourceTree = "<group>"; };
+		B659B3BB2619CB2200C90C64 /* ParentViewWithEnvironmentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewWithEnvironmentObject.swift; sourceTree = "<group>"; };
+		B659B3C32619CB5E00C90C64 /* ChildViewWithEnvironmentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewWithEnvironmentObject.swift; sourceTree = "<group>"; };
+		B659B3CC2619FAD000C90C64 /* ParentViewWithObservedObjectForiOS13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewWithObservedObjectForiOS13.swift; sourceTree = "<group>"; };
+		B659B3D42619FAE100C90C64 /* ChildViewWithObservedObjectForiOS13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewWithObservedObjectForiOS13.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				B659B34E261892AB00C90C64 /* ObservedObject_or_StateObjectApp.swift */,
-				B659B3B22618C33600C90C64 /* Views */,
 				B659B3AE2618C32000C90C64 /* Entity */,
+				B659B3B22618C33600C90C64 /* Views */,
 				B659B3A12618C2E900C90C64 /* Color+random.swift */,
 				B659B352261892AD00C90C64 /* Assets.xcassets */,
 				B659B357261892AD00C90C64 /* Info.plist */,
@@ -173,11 +181,39 @@
 		B659B3B22618C33600C90C64 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B659B3CB2619FAB200C90C64 /* Binding */,
 				B659B350261892AB00C90C64 /* ContentView.swift */,
+				B659B3BA2619CADA00C90C64 /* EnvironmentObject */,
 				B659B3A62618C2FB00C90C64 /* ObservedObject */,
 				B659B3AA2618C30F00C90C64 /* StateObject */,
+				B659B3B92619CA4000C90C64 /* iOS13 */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B659B3B92619CA4000C90C64 /* iOS13 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iOS13;
+			sourceTree = "<group>";
+		};
+		B659B3BA2619CADA00C90C64 /* EnvironmentObject */ = {
+			isa = PBXGroup;
+			children = (
+				B659B3BB2619CB2200C90C64 /* ParentViewWithEnvironmentObject.swift */,
+				B659B3C32619CB5E00C90C64 /* ChildViewWithEnvironmentObject.swift */,
+			);
+			path = EnvironmentObject;
+			sourceTree = "<group>";
+		};
+		B659B3CB2619FAB200C90C64 /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				B659B3CC2619FAD000C90C64 /* ParentViewWithObservedObjectForiOS13.swift */,
+				B659B3D42619FAE100C90C64 /* ChildViewWithObservedObjectForiOS13.swift */,
+			);
+			path = Binding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,12 +347,16 @@
 			files = (
 				B659B3A22618C2E900C90C64 /* Color+random.swift in Sources */,
 				B659B351261892AB00C90C64 /* ContentView.swift in Sources */,
+				B659B3C42619CB5E00C90C64 /* ChildViewWithEnvironmentObject.swift in Sources */,
 				B659B3982618B5C200C90C64 /* ParentViewWithStateObject.swift in Sources */,
 				B659B3822618940200C90C64 /* ProjectData.swift in Sources */,
 				B659B34F261892AB00C90C64 /* ObservedObject_or_StateObjectApp.swift in Sources */,
+				B659B3BC2619CB2200C90C64 /* ParentViewWithEnvironmentObject.swift in Sources */,
 				B659B3872618999C00C90C64 /* ParentViewWithObservedObject.swift in Sources */,
 				B659B39D2618B5DB00C90C64 /* ChildViewWithStateObject.swift in Sources */,
 				B659B37D261893C400C90C64 /* ChildViewWithObservedObject.swift in Sources */,
+				B659B3CD2619FAD000C90C64 /* ParentViewWithObservedObjectForiOS13.swift in Sources */,
+				B659B3D52619FAE100C90C64 /* ChildViewWithObservedObjectForiOS13.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
