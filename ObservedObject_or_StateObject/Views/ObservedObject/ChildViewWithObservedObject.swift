@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ChildViewWithObservedObject: View {
-    @ObservedObject var data: ProjectData = .init()
+    @ObservedObject private var data: ProjectData = .init()
     
     private let filename = (#file as NSString).lastPathComponent
     

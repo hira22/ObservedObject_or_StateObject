@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink("ObservedObject", destination: ParentViewWithObservedObject())
+                NavigationLink("ObservedObject(It doesn't work as expected)", destination: ParentViewWithObservedObject())
                 NavigationLink("StateObject", destination: ParentViewWithStateObject())
                 NavigationLink("EnvironmentObject",
                                destination: ParentViewWithEnvironmentObject()

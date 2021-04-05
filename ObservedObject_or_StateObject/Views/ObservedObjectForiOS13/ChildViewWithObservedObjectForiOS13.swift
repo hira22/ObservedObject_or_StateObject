@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ChildViewWithObservedObjectForiOS13: View {
-    @ObservedObject var projectData: ProjectData
+    // NOTE: 本来は private(set) でOK
+    @ObservedObject private var projectData: ProjectData
 
     private let filename = (#file as NSString).lastPathComponent
 

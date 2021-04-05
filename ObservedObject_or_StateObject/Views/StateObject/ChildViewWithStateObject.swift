@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ChildViewWithStateObject: View {
-    @StateObject var data: ProjectData = .init()
+    @StateObject private var data: ProjectData = .init()
     
     private let filename = (#file as NSString).lastPathComponent
     

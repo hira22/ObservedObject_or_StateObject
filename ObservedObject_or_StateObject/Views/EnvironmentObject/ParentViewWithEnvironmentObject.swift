@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ParentViewWithEnvironmentObject: View {
-    @State var background: Color = .orange
+    @State private var background: Color = .random
 
     private let filename = (#file as NSString).lastPathComponent
 

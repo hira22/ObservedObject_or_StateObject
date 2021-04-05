@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ParentViewWithObservedObjectForiOS13: View {
-    @State var background: Color = .orange
+    @State private var background: Color = .random
     @ObservedObject var projectData: ProjectData = .init()
 
     private let filename = (#file as NSString).lastPathComponent

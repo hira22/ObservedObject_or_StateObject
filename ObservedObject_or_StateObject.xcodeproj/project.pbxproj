@@ -186,16 +186,8 @@
 				B659B3A62618C2FB00C90C64 /* ObservedObject */,
 				B659B3CB2619FAB200C90C64 /* ObservedObjectForiOS13 */,
 				B659B3AA2618C30F00C90C64 /* StateObject */,
-				B659B3B92619CA4000C90C64 /* iOS13 */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		B659B3B92619CA4000C90C64 /* iOS13 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = iOS13;
 			sourceTree = "<group>";
 		};
 		B659B3BA2619CADA00C90C64 /* EnvironmentObject */ = {

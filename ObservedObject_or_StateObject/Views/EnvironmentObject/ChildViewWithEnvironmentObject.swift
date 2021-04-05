@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ChildViewWithEnvironmentObject: View {
-    @EnvironmentObject var data: ProjectData
+    @EnvironmentObject private var data: ProjectData
 
     private let filename = (#file as NSString).lastPathComponent
 
