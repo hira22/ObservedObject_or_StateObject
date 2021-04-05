@@ -35,7 +35,12 @@ struct ParentViewWithObservedObjectForiOS13: View {
 
 
                 Text("""
-よくわからない
+ParentView で データオブジェクトのインスタンスを生成しているパターンです。
+
+デプロイメントターゲットに iOS13 を含める場合は、@StateObject を使用できません。
+ChildView でのインスタンスの生成は避け、ParentView で ChildView が必要とするデータオブジェクトを保持するといいでしょう。
+ChildView がo再描画された場合でも、ParentView で保持されているデータは初期化されないからです。
+
 """)
             }
             .font(.subheadline)

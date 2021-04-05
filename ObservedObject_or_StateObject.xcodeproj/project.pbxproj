@@ -181,10 +181,10 @@
 		B659B3B22618C33600C90C64 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B659B3CB2619FAB200C90C64 /* Binding */,
 				B659B350261892AB00C90C64 /* ContentView.swift */,
 				B659B3BA2619CADA00C90C64 /* EnvironmentObject */,
 				B659B3A62618C2FB00C90C64 /* ObservedObject */,
+				B659B3CB2619FAB200C90C64 /* ObservedObjectForiOS13 */,
 				B659B3AA2618C30F00C90C64 /* StateObject */,
 				B659B3B92619CA4000C90C64 /* iOS13 */,
 			);
@@ -207,13 +207,13 @@
 			path = EnvironmentObject;
 			sourceTree = "<group>";
 		};
-		B659B3CB2619FAB200C90C64 /* Binding */ = {
+		B659B3CB2619FAB200C90C64 /* ObservedObjectForiOS13 */ = {
 			isa = PBXGroup;
 			children = (
 				B659B3CC2619FAD000C90C64 /* ParentViewWithObservedObjectForiOS13.swift */,
 				B659B3D42619FAE100C90C64 /* ChildViewWithObservedObjectForiOS13.swift */,
 			);
-			path = Binding;
+			path = ObservedObjectForiOS13;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
